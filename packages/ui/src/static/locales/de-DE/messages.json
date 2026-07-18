@@ -132,6 +132,7 @@
       "NAME": "Name",
       "DISPLAY_NAME": "Anzeigename",
       "TYPE": "Typ",
+      "INPUT_DATA_TYPE": "Input data type",
       "STATE": "Status",
       "RUNNING": "Läuft",
       "PAUSED": "Pausiert",

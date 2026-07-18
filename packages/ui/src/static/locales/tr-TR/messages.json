@@ -132,6 +132,7 @@
       "NAME": "Ad",
       "DISPLAY_NAME": "Görünen ad",
       "TYPE": "Tür",
+      "INPUT_DATA_TYPE": "Input data type",
       "STATE": "Durum",
       "RUNNING": "Çalışıyor",
       "PAUSED": "Durduruldu",

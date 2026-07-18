@@ -22,6 +22,8 @@ export abstract class BaseAdapter {
   public readonly delimiter: string;
   public readonly description: string;
   public readonly displayName: string;
+  public readonly defaultJobData: Record<string, unknown>;
+  public readonly inputDataType: string;
   public readonly type: QueueType;
   public readonly externalJobUrl: QueueAdapterOptions['externalJobUrl'];
   private formatters = new Map<FormatterField, (data: any) => any>();
@@ -38,6 +40,8 @@ export abstract class BaseAdapter {
     this.delimiter = options.delimiter || '';
     this.description = options.description || '';
     this.displayName = options.displayName || '';
+    this.defaultJobData = options.defaultJobData || {};
+    this.inputDataType = options.inputDataType || '';
     this.type = type;
     this.externalJobUrl = options.externalJobUrl;
   }

@@ -132,6 +132,7 @@
       "NAME": "Name",
       "DISPLAY_NAME": "Display name",
       "TYPE": "Type",
+      "INPUT_DATA_TYPE": "Input data type",
       "STATE": "State",
       "RUNNING": "Running",
       "PAUSED": "Paused",

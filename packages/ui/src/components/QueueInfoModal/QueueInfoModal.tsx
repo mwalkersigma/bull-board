@@ -78,6 +78,11 @@ export const QueueInfoModal = ({ open, queue, onClose }: QueueInfoModalProps) =>
           <Row label={t('QUEUE.INFO.TYPE')}>
             <span className={s.badge}>{queue.type === 'bullmq' ? 'BullMQ' : 'Bull'}</span>
           </Row>
+          {queue.inputDataType && (
+            <Row label={t('QUEUE.INFO.INPUT_DATA_TYPE')}>
+              <span className={s.mono}>{queue.inputDataType}</span>
+            </Row>
+          )}
           <Row label={t('QUEUE.INFO.STATE')}>
             <span className={cn(s.badge, queue.isPaused ? s.badgePaused : s.badgeRunning)}>
               {queue.isPaused ? t('QUEUE.INFO.PAUSED') : t('QUEUE.INFO.RUNNING')}

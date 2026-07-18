@@ -259,6 +259,7 @@ const run = async () => {
       new BullMQAdapter(resetPassword, {
         delimiter: ';',
         displayName: 'Reset Password',
+        defaultJobData: {"username": "", "email": ""},
       }),
     ],
     serverAdapter,

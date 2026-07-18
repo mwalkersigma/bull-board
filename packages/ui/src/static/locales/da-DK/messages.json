@@ -132,6 +132,7 @@
       "NAME": "Navn",
       "DISPLAY_NAME": "Vist navn",
       "TYPE": "Type",
+      "INPUT_DATA_TYPE": "Input data type",
       "STATE": "Tilstand",
       "RUNNING": "Kører",
       "PAUSED": "Pauset",

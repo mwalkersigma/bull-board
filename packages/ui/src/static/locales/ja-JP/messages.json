@@ -131,6 +131,7 @@
       "NAME": "名前",
       "DISPLAY_NAME": "表示名",
       "TYPE": "タイプ",
+      "INPUT_DATA_TYPE": "Input data type",
       "STATE": "状態",
       "RUNNING": "実行中",
       "PAUSED": "一時停止中",

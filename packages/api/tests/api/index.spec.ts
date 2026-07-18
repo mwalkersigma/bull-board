@@ -212,6 +212,32 @@ describe('happy', () => {
         });
     });
 
+    it('should expose default job data and input data type in queue details', async () => {
+      const paintQueue = new Queue('Paint', { connection });
+      queueList.push(paintQueue);
+
+      createBullBoard({
+        queues: [
+          new BullMQAdapter(paintQueue, {
+            defaultJobData: { source: 'admin', priority: 'high' },
+            inputDataType: 'CreatePaintJobInput',
+          }),
+        ],
+        serverAdapter,
+      });
+
+      await request(serverAdapter.getRouter())
+        .get('/api/queues')
+        .expect('Content-Type', /json/)
+        .expect(200)
+        .then((res) => {
+          const respQueues = JSON.parse(res.text).queues;
+          expect(respQueues).toHaveLength(1);
+          expect(respQueues[0].defaultJobData).toEqual({ source: 'admin', priority: 'high' });
+          expect(respQueues[0].inputDataType).toBe('CreatePaintJobInput');
+        });
+    });
+
     it('should disable retries in queue if readOnlyMode is true', async () => {
       const paintQueue = new Queue('Paint', { connection });
       queueList.push(paintQueue);

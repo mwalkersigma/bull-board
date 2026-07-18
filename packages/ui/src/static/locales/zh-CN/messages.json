@@ -130,6 +130,7 @@
       "NAME": "名称",
       "DISPLAY_NAME": "显示名称",
       "TYPE": "类型",
+      "INPUT_DATA_TYPE": "Input data type",
       "STATE": "状态",
       "RUNNING": "运行中",
       "PAUSED": "已暂停",

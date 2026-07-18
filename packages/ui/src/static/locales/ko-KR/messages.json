@@ -130,6 +130,7 @@
       "NAME": "이름",
       "DISPLAY_NAME": "표시 이름",
       "TYPE": "유형",
+      "INPUT_DATA_TYPE": "Input data type",
       "STATE": "상태",
       "RUNNING": "실행 중",
       "PAUSED": "일시정지됨",

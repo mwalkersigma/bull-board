@@ -133,6 +133,7 @@
       "NAME": "Nome",
       "DISPLAY_NAME": "Nome de exibição",
       "TYPE": "Tipo",
+      "INPUT_DATA_TYPE": "Input data type",
       "STATE": "Estado",
       "RUNNING": "Em execução",
       "PAUSED": "Em pausa",

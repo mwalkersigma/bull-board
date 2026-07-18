@@ -87,6 +87,8 @@ async function getAppQueues(
         name: queueName,
         displayName: queue.getDisplayName() || undefined,
         description: queue.getDescription() || undefined,
+        defaultJobData: queue.defaultJobData,
+        inputDataType: queue.inputDataType || undefined,
         statuses: queue.getStatuses(),
         counts: counts as Record<Status, number>,
         jobs: jobs.filter(Boolean).map((job) => formatJob(job, queue)),
